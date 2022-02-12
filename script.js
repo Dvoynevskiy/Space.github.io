@@ -1,9 +1,3 @@
-'use strict';
-
-{
-    "esversion": 6
-}
-
 let numberOfFilms;
 
 function start() {
@@ -61,8 +55,15 @@ function showMyDB() {
 
 showMyDB();
 
+function writeYourGenres() {
+    for (let i = 1; i < 4; i++) {
+        genre = prompt(`Ващ любимый жанр под номером ${i}`)
+        personalMovieDB.genres[i-1] = genre;
+    }
 
+}
 
+writeYourGenres();
 
 
 
