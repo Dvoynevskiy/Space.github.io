@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 let numberOfFilms;
 
 function start() {
@@ -49,7 +51,7 @@ detectPersonalLevel();
 
 function showMyDB() {
     if (personalMovieDB.privat == false) {
-        console.log(personalMovieDB)
+        console.log(personalMovieDB);
     }
 }
 
@@ -57,8 +59,7 @@ showMyDB();
 
 function writeYourGenres() {
     for (let i = 1; i < 4; i++) {
-        genre = prompt(`Ващ любимый жанр под номером ${i}`)
-        personalMovieDB.genres[i-1] = genre;
+        personalMovieDB.genres[i - 1] = prompt(`Ващ любимый жанр под номером ${i}`);
     }
 
 }
